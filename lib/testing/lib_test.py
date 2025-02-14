@@ -21,7 +21,7 @@ class TestGreetProgrammer:
 class TestGreet:
     '''function greet()'''
 
-    def test_greet_programmer(self):
+    def test_greet(self):
         '''prints "Hello, {name}!"'''
         captured_out = io.StringIO()
         sys.stdout = captured_out
@@ -60,7 +60,7 @@ class TestHalve:
 
     def test_halve_int(self):
         '''halves integer input'''
-        assert(halve(100) == 50)
+        assert(halve(100)  == 50)
 
     def test_halve_float(self):
         '''halves float input'''
